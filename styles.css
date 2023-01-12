@@ -1,0 +1,116 @@
+/*TODO расскраску Х и О в зависимости от значений*/
+/*  1st - tags+class */
+img.preview {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+td.gamecell{
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+/*  2nd - classess */
+.btn-primary{
+    margin: 15px;
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+/* TODO need to rename class to use with credit card OR modify to specific type */
+/*.card{
+    border-style: outset;
+    border-color: grey;
+    border-width: medium;
+    border-radius: 10px;
+    margin: 15px;
+}*/
+/*same
+.card:hover{
+
+}
+*/
+
+
+
+
+.qtyControls{
+    display:inline-block;
+}
+
+.quantity{
+
+}
+
+.signature{
+    text-align: right;
+    font-style: italic;
+    margin: 0;
+}
+
+.comment{
+    padding: 0;
+}
+
+/* Code for floating div got from: https://www.minddevelopmentanddesign.com/blog/create-floating-html-element-stays-sidebar-scrolling/ */
+/*.sticky {
+ position: fixed;
+ top: 10px;
+ right:18px;
+}
+
+.abs {
+   position: absolute;
+   bottom: 10px;
+   right:10px;
+}
+
+#content-wrap {
+  position: relative;
+}
+
+.clearfix:after {
+ content:"";
+ display:block;
+ clear:both;
+}*/
+
+/*  3rd - ids */
+#commentInput{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#social{
+    float: right;
+    margin-right: 10px;
+/*     margin-top: 10px; */
+}
+
+
+/*  4th - types */
+[type="number"]{
+    height: 100%;
+    width: 15%;
+    padding: 1px 5px;
+}
+
+/* 5th - pseudoclass */
+.gamecell:hover{
+    background-color: lightgrey;
+}
+
+/* 6th - tags */
+nav {
+    position:
+}
