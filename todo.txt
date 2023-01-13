@@ -1,2 +1,14 @@
 TODO list:
+COMMON
 - copy updated menu to all pages
+
+INDEX.HTML
+- причесать тэги svg
+
+Services:
++ после покупки очистить inputs, скрыть карточку
+- оформить вид карточки https://getbootstrap.com/docs/5.2/utilities/shadows/
+-  проверка/возможность ввода только цифр (regex?) в поля количества
+
+Contacts:
++ change height of input field

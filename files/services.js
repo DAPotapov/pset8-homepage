@@ -1,18 +1,14 @@
 // Functions for services page (services.html)
-// var element = document.querySelectorAll('.quantity');
-// element.addEventListener('change', inputcontrol());
-//
-// function inputcontrol(){
-//         console.log("It's working");
-// }
 
 function calculateSum(){
-
-//     TODO должна быть проверка/возможность ввода только цифр (regex?)
+    // Prepare
+    $('#thanks').attr('hidden','');
+    // Get values
     var positions = document.querySelectorAll('.quantity');
     var len = positions.length;
     var totalSum = 0;
     var cost = document.querySelectorAll('.cost');
+    // Calculate
     for (let i = 0; i < len; i++) {
         if (positions[i].value != '') {
             totalSum = totalSum + parseInt(positions[i].value) * parseInt(cost[i].innerHTML);
@@ -31,7 +27,6 @@ function calculateSum(){
 
 function order(){
     document.getElementById("creditcard").removeAttribute('hidden', '');
-//     console.log("Nothing");
 }
 
 function validation(){
@@ -85,7 +80,7 @@ function validation(){
     }
 
 
-    // When it is long enough lets validate it, maybe TODO from here https://attacomsian.com/blog/javascript-detect-user-stops-typing
+    // When it is long enough lets validate it
     if (n > 12) {
         // Assume that card number max length is limited 16 digits. We can scale it later if needed.
         var zeros = '0';
@@ -93,16 +88,13 @@ function validation(){
             zeros = zeros + '0';
         }
         var cardnumber = zeros + numberInput;
-        console.log(cardnumber);
         if (validate(cardnumber)){
              // button buy
             document.getElementById("buybtn").removeAttribute('disabled', '');
         }
         else{
-            // плашка invalid
             document.getElementById("buybtn").setAttribute('disabled', '');
         }
-//     console.log(numberInput);
     }
 }
 
@@ -129,7 +121,11 @@ function validate(cardnumber){
     }
 }
 
+// Emulate payment function and clear form after
 function payment(){
     document.getElementById("thanks").removeAttribute('hidden', '');
-    // This one-string function made as standalone on purpose: In real world here will be more sophisticated function to process transaction
+    $('.quantity').val(0);
+    $('#totalSum').html('');
+    $('#creditcard').attr('hidden','');
+    $('#orderNow').attr('disabled', '');
 }

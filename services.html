@@ -4,6 +4,7 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <link href="styles.css" rel="stylesheet">
         <title>Our services</title>
         <script src="files/services.js"></script>
@@ -38,7 +39,6 @@
     <div class="container">
         <h2>You can order our services on this page</h2>
 
-<!--         // TODO when click on qty input field show button to increase and decrease, -->
         <table class="table">
         <thead>
             <tr>
@@ -77,19 +77,20 @@
     <button id="orderNow" class="btn btn-primary" type="submit" onclick="order()" disabled>Order now!</button>
 
  <!--hidden-->  <!--TODO сделать по форме карты, убрать лишние стили - задать свои-->
-<!--  Based on example from market.yandex.ru -->
-        <div class="container card" id="creditcard" hidden>
-            <div class="card_number input_form">
+<!--  Inspired by market.yandex.ru -->
+        <div class="container cardform shadow border rounded-4" id="creditcard" hidden>
+            <div class="container"> <!--card_number input_form-->
+                <div id="cardlogo" class=""></div>
                 <label class="" for="card_number-input">Card number</label>
                 <div class="input-group mb-3">
-                    <input id="card_number-input" class="form_control" type="text" inputmode="numeric" data-value="" aria-label="Card number" maxlength="16" x-autocompletetype="cc-number" autocomplete="cc-number" autocorrect="off" autocapitalize="none" spellcheck="off" tabindex="1" oninput="validation()">
-                    <div id="cardlogo" class=""></div>
+                    <input id="card_number-input" class="cardnumber" type="text" inputmode="numeric" data-value="" aria-label="Card number" maxlength="16" x-autocompletetype="cc-number" autocomplete="cc-number" autocorrect="off" autocapitalize="none" spellcheck="off" tabindex="1" oninput="validation()">
+
                 </div>
                 <div class="alert alert-danger" id="nonvalid" role="alert" hidden>
                     Credit card number is not valid
                 </div>
             </div>
-            <input id="buybtn" class="btn btn-primary btn-sm" type="submit" value="Buy" onclick="payment()" disabled> <!--TODO remove disabled if number correct, other script onclick to show success msg -->
+            <input id="buybtn" class="btn btn-primary btn-sm" type="submit" value="Buy" onclick="payment()" disabled>
         </div>
 
     <div class="alert alert-success" id="thanks" role="alert" hidden>
@@ -101,12 +102,12 @@
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link px-2 text-muted">Services</a></li>
             <li class="nav-item"><a href="portfolio.html" class="nav-link px-2 text-muted">Portfolio</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link px-2 text-muted">Services</a></li>
             <li class="nav-item"><a href="contacts.html" class="nav-link px-2 text-muted">About</a></li>
             <li class="nav-item"><a href="tictactoe.html" class="nav-link px-2 text-muted">FUN</a></li>
         </ul>
-        <p class="text-center text-muted">© 2022 Potapov Studio</p>
+        <p class="text-center text-muted">© 2023 Potapov Studio</p>
     </footer>
     </div>
 

@@ -11,6 +11,7 @@ function hasComment(){
     }
 }
 
+// I assume that there will be one-line comments, so let post by Enter-hit
 function enterHit(event){
     if (event.key == "Enter" && document.getElementById("commentInput").value.length > 0)
     {

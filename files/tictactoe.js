@@ -59,7 +59,7 @@ function game(id){
             }
         }
 
-        // serch diagonals
+        // Search diagonals
         let xcount = 0;
         let xcount2 = 0;
         for (let i = 1; i < 4; i++){
@@ -288,7 +288,7 @@ function game(id){
                     }
                 }
 
-                // serch diagonals
+                // Search diagonals
                 ocount = 0;
                 let ocount2 = 0;
                 for (let i = 1; i < 4; i++){

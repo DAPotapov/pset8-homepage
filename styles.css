@@ -1,5 +1,11 @@
-/*TODO расскраску Х и О в зависимости от значений*/
-/*  1st - tags+class */
+/*  1st - tags */
+q{
+    font-family: "Lucida Handwriting", Cursive;
+    font-style: italic;
+}
+
+
+/*  2nd - tags+classess */
 img.preview {
     max-width: 100%;
     max-height: 100%;
@@ -13,7 +19,7 @@ td.gamecell{
     vertical-align: middle;
 }
 
-/*  2nd - classess */
+/* 3d - classess */
 .btn-primary{
     margin: 15px;
 }
@@ -23,18 +29,41 @@ td.gamecell{
     margin-left: 10px;
 }
 
-
-
 /* TODO need to rename class to use with credit card OR modify to specific type */
-/*.card{
-    border-style: outset;
+.cardform{
+/*    border-style: outset;
     border-color: grey;
     border-width: medium;
-    border-radius: 10px;
-    margin: 15px;
-}*/
+    border-radius: 10px;*/
+    margin: 15px 15px;
+    padding: 15px 15px;
+    max-width: 350px;
+    max-height: 228px;
+}
+
+.cardnumber{
+/*     font-family: "Courier New"; */
+    font-size: 1.5em;
+
+}
+
+.comment{
+    padding: 0;
+}
+
+.examples{
+    margin: 5px;
+    width: 100%;
+}
+
+.feedback{
+    margin: 3px;
+}
+
+
+
 /*same
-.card:hover{
+.cardform:hover{
 
 }
 */
@@ -56,61 +85,43 @@ td.gamecell{
     margin: 0;
 }
 
-.comment{
-    padding: 0;
+
+/*  4th - ids */
+#card_number-input{
+    font-family: 'Courier new', monospace;
+/*     TODO установить скачанный шрифт для кредитной карты, или сделать ссылку на него в сети */
 }
 
-/* Code for floating div got from: https://www.minddevelopmentanddesign.com/blog/create-floating-html-element-stays-sidebar-scrolling/ */
-/*.sticky {
- position: fixed;
- top: 10px;
- right:18px;
-}
-
-.abs {
-   position: absolute;
-   bottom: 10px;
-   right:10px;
-}
-
-#content-wrap {
-  position: relative;
-}
-
-.clearfix:after {
- content:"";
- display:block;
- clear:both;
-}*/
-
-/*  3rd - ids */
 #commentInput{
     height: 100%;
     width: 100%;
-
 }
-
 
 #social{
     float: right;
     margin-right: 10px;
-/*     margin-top: 10px; */
 }
 
 
-/*  4th - types */
+/*  5th - types */
 [type="number"]{
     height: 100%;
     width: 15%;
     padding: 1px 5px;
 }
 
-/* 5th - pseudoclass */
+/* 6th - pseudoclass */
 .gamecell:hover{
     background-color: lightgrey;
 }
 
-/* 6th - tags */
-nav {
-    position:
+.topmenu:hover{
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.9);
+    border-radius: 3px;
+    margin: -1px; /*To compensate border width*/
 }
+
+
+
+
