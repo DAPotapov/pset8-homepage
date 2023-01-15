@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'credit_cardregular';
+    src: url('files/Fonts/credit_cardregular/credc___-webfont.woff2') format('woff2'),
+         url('files/Fonts/credit_cardregular/credc___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*  1st - tags */
 q{
     font-family: "Lucida Handwriting", Cursive;
@@ -41,12 +49,6 @@ td.gamecell{
     max-height: 228px;
 }
 
-.cardnumber{
-/*     font-family: "Courier New"; */
-    font-size: 1.5em;
-
-}
-
 .comment{
     padding: 0;
 }
@@ -88,8 +90,8 @@ td.gamecell{
 
 /*  4th - ids */
 #card_number-input{
-    font-family: 'Courier new', monospace;
-/*     TODO установить скачанный шрифт для кредитной карты, или сделать ссылку на него в сети */
+    font-size: 1.1em;
+    font-family: 'credit_cardregular','Courier new', monospace;
 }
 
 #commentInput{
