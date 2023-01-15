@@ -7,8 +7,9 @@ INDEX.HTML
 
 Services:
 + после покупки очистить inputs, скрыть карточку
-- оформить вид карточки https://getbootstrap.com/docs/5.2/utilities/shadows/
+- оформить вид карточки: пропорции
 -  проверка/возможность ввода только цифр (regex?) в поля количества
+- кнопку Order разместить под суммой
 
 Contacts:
 + change height of input field
