@@ -45,7 +45,6 @@ function addComment(){
         var signature = document.createTextNode(document.getElementById("commentAuthor").value + ', ' + new Date());
         var par = document.createElement("p");
         par.appendChild(signature);
-//         par.setAttribute('class', 'signature');
         $(par).addClass('signature text-muted');
         node.appendChild(par);
         const list = document.getElementById("comments");

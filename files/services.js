@@ -1,4 +1,11 @@
 // Functions for services page (services.html)
+$(document).ready(function(){
+    $('#orderNow').attr('disabled','');
+    $('.quantity').val(0);
+//     console.log('Working');
+
+});
+
 
 function calculateSum(){
     // Prepare
@@ -57,7 +64,10 @@ function validation(){
 
     // Once 2 digits of number is written start checking which bank system card belongs
     if (n > 1) {
-        var textnode = document.createTextNode('');
+//         1 вариант: абзац для Payment system + абзац для названия (наверное вместо appendChild потребуется добавить sibling и float:right
+//         2 вариант: хранить строку payment system в переменной и в коде ниже её дополнять
+//         var textnode = document.createTextNode('');
+        var textnode = document.getElementById('cardlogo').nodeValue;
         if (numberInput.startsWith('2')) {
             textnode.nodeValue = 'MIR';
         }
@@ -73,9 +83,9 @@ function validation(){
         // Add cardname only if it has one
         if (textnode.nodeValue != '')
         {
-            var cardname = document.createElement('p');
-            cardname.appendChild(textnode);
-            document.getElementById("cardlogo").appendChild(cardname);
+//             var cardname = document.createElement('p');
+//             cardname.appendChild(textnode);
+            document.getElementById("cardlogo").appendChild(textnode);
         }
     }
 

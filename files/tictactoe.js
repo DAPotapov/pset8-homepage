@@ -19,7 +19,6 @@ function playgame(){
             id = (i + 1) + '' + (j + 1);
             col.setAttribute('id', id);
             col.setAttribute('onclick', 'game(id)');
-         //   col.setAttribute('style', 'text-align: center'); //font-size: 3em;
             col.setAttribute('class', 'gamecell');
             row.appendChild(col);
         }

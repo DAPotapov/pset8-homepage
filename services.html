@@ -36,51 +36,54 @@
     </div>
     </nav>
 
-    <div class="container">
-        <h2>You can order our services on this page</h2>
+    <div>
+        <div class="container">
+            <h2>You can order our services on this page</h2>
 
-        <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Services</th>
-                <th scope="col">Cost</th>
-                <th scope="col">Choose q-ty</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Landing site (one page)</td>
-                <td class="cost" color='blue'>1000</td>
-                <td><input class="quantity" onclick="" oninput="calculateSum()" placeholder="0" type="number"></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Bisness-card (1-5 pages)</td>
-                <td class="cost">1500</td>
-                <td><input class="quantity" onclick="" oninput="calculateSum()" placeholder="0" type="number"></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Corporate site (10-15 pages)</td>
-                <td class="cost">2000</td>
-                <td><input class="quantity" onclick="" oninput="calculateSum()" placeholder="0" type="number"></td>
-            </tr>
-            <tr>
-                <td colspan="3" style="text-align:right">Total sum:</td>
-                <td id="totalSum" ></td>
-            </tr>
-        </tbody>
-        </table>
+            <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Services</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Choose quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Landing site (one page)</td>
+                    <td class="cost" color='blue'>1000</td>
+                    <td><input class="quantity" onclick="" oninput="calculateSum()" placeholder="0" type="number"></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Bisness-card (1-5 pages)</td>
+                    <td class="cost">1500</td>
+                    <td><input class="quantity" onclick="" oninput="calculateSum()" placeholder="0" type="number"></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Corporate site (10-15 pages)</td>
+                    <td class="cost">2000</td>
+                    <td><input class="quantity" onclick="" oninput="calculateSum()" placeholder="0" type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:right">Total sum:</td>
+                    <td id="totalSum" ></td>
+                </tr>
+            </tbody>
+            </table>
 
-    <button id="orderNow" class="btn btn-primary" type="submit" onclick="order()" disabled>Order now!</button>
-
+            <div class='col offset-md-6'>
+            <button id="orderNow" class="btn btn-primary" type="submit" onclick="order()" disabled>Order now!</button>
+            </div>
+        </div>
  <!--hidden-->  <!--TODO сделать по форме карты, убрать лишние стили - задать свои-->
 <!--  Inspired by market.yandex.ru -->
         <div class="container cardform border rounded-4" id="creditcard" hidden>
-            <div class="container"> <!--card_number input_form-->
-                <div id="cardlogo" class=""></div>
+<!--             <div class="container"> <!--card_number input_form-->
+                <div id="cardlogo" class="col">Payment system: </div>
                 <label class="" for="card_number-input">Card number</label>
                 <div class="input-group mb-3">
                     <input id="card_number-input" class="cardnumber form-control" type="text" inputmode="numeric" data-value="" aria-label="Card number" maxlength="16" x-autocompletetype="cc-number" autocomplete="cc-number" autocorrect="off" autocapitalize="none" spellcheck="off" tabindex="1" oninput="validation()">
@@ -89,27 +92,28 @@
                 <div class="alert alert-danger" id="nonvalid" role="alert" hidden>
                     Credit card number is not valid
                 </div>
-            </div>
+<!--             </div> -->
             <input id="buybtn" class="btn btn-primary btn-sm" type="submit" value="Buy" onclick="payment()" disabled>
         </div>
 
-    <div class="alert alert-success" id="thanks" role="alert" hidden>
-        Thank you for your payment!
+        <div class="alert alert-success" id="thanks" role="alert" hidden>
+            Thank you for your payment!
+        </div>
     </div>
 
+        <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link px-2 text-muted">Portfolio</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link px-2 text-muted">Services</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="tictactoe.html" class="nav-link px-2 text-muted">FUN</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Potapov Studio</p>
+        </footer>
+        </div>
 
-    <div class="container">
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="portfolio.html" class="nav-link px-2 text-muted">Portfolio</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link px-2 text-muted">Services</a></li>
-            <li class="nav-item"><a href="contacts.html" class="nav-link px-2 text-muted">About</a></li>
-            <li class="nav-item"><a href="tictactoe.html" class="nav-link px-2 text-muted">FUN</a></li>
-        </ul>
-        <p class="text-center text-muted">© 2023 Potapov Studio</p>
-    </footer>
-    </div>
 
 
 

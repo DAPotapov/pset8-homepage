@@ -6,10 +6,8 @@
     font-style: normal;
 }
 
-@cardheight: 350px;
-
 /*  1st - tags */
-TODO верхнее меню закрепить, но остальные элементы должны быть сдвинуты относительно него - сделать ветку
+/* TODO верхнее меню закрепить, но остальные элементы должны быть сдвинуты относительно него - сделать ветку */
 /*.navbar{
   position: fixed;
   top: 0;
@@ -46,8 +44,8 @@ td.gamecell{
     margin-left: 10px;
 }
 
-/* TODO need to rename class to use with credit card OR modify to specific type */
 .cardform{
+    position: static;
     margin: auto;
     padding: 15px 15px;
     width: 25%;
@@ -56,6 +54,7 @@ td.gamecell{
     min-height: 10em;
     max-width: 35em;
     max-height: 23em;
+
 }
 
 .comment{
@@ -88,9 +87,8 @@ td.gamecell{
 
 /*  4th - ids */
 #buybtn{
-/*     float: right; */
-    position: fixed;
-
+    float: right;
+    position: relative;
 }
 
 #card_number-input{
@@ -98,16 +96,21 @@ td.gamecell{
     font-family: 'credit_cardregular','Courier new', monospace;
 }
 
+#cardlogo{
+/*     position: relative; */
+/*     float: right; */
+}
+
 #commentInput{
     height: 100%;
     width: 100%;
 }
 
+
 #social{
     float: right;
     margin-right: 10px;
 }
-
 
 /*  5th - types */
 [type="number"]{
