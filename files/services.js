@@ -41,14 +41,14 @@ function validation(){
     var cardlogo = document.getElementById("cardlogo");
     document.getElementById('nonvalid').setAttribute('hidden', '');
     document.getElementById('thanks').setAttribute('hidden', '');
-    while (cardlogo.lastChild)
-    {
-        cardlogo.removeChild(cardlogo.lastChild);
-    }
+//     while (cardlogo.lastChild)
+//     {
+//         cardlogo.removeChild(cardlogo.lastChild);
+//     }
 
-    if (document.getElementById("cardlogo").childElementCount > 0) {
-        document.getElementById("cardlogo").children.remove;
-    }
+//     if (document.getElementById("cardlogo").childElementCount > 0) {
+//         document.getElementById("cardlogo").children.remove;
+//     }
 
     var numberInput = document.getElementById("card_number-input").value;
     // Lets control that user don't input anything besides numbers and space (it's ok - I'll get rid of it later)
@@ -66,8 +66,8 @@ function validation(){
     if (n > 1) {
 //         1 вариант: абзац для Payment system + абзац для названия (наверное вместо appendChild потребуется добавить sibling и float:right
 //         2 вариант: хранить строку payment system в переменной и в коде ниже её дополнять
-//         var textnode = document.createTextNode('');
-        var textnode = document.getElementById('cardlogo').nodeValue;
+        var textnode = document.createTextNode('');
+//         var textnode = document.getElementById('cardlogo').nodeValue;
         if (numberInput.startsWith('2')) {
             textnode.nodeValue = 'MIR';
         }
