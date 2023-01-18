@@ -35,6 +35,11 @@ td.gamecell{
 }
 
 /* 3d - classess */
+.banksystem{
+    `float: right;
+
+}
+
 .btn-primary{
     margin: 15px;
 }
@@ -124,6 +129,12 @@ td.gamecell{
   box-shadow: 0.3rem 0.5rem rgba(0, 0, 0, .175);
 
 }
+
+/*.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
 
 .gamecell:hover{
     background-color: lightgrey;

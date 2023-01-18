@@ -46,9 +46,9 @@ function validation(){
 //         cardlogo.removeChild(cardlogo.lastChild);
 //     }
 
-//     if (document.getElementById("cardlogo").childElementCount > 0) {
-//         document.getElementById("cardlogo").children.remove;
-//     }
+    while (cardlogo.childElementCount > 1) {
+        cardlogo.removeChild(cardlogo.lastChild);
+    }
 
     var numberInput = document.getElementById("card_number-input").value;
     // Lets control that user don't input anything besides numbers and space (it's ok - I'll get rid of it later)
@@ -83,9 +83,10 @@ function validation(){
         // Add cardname only if it has one
         if (textnode.nodeValue != '')
         {
-//             var cardname = document.createElement('p');
-//             cardname.appendChild(textnode);
-            document.getElementById("cardlogo").appendChild(textnode);
+            var cardname = document.createElement('p');
+            cardname.appendChild(textnode);
+            cardname.setAttribute('class', 'banksystem');
+            document.getElementById("cardlogo").appendChild(cardname);
         }
     }
 
