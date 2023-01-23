@@ -35,10 +35,6 @@ td.gamecell{
 }
 
 /* 3d - classess */
-.banksystem{
-    `float: right;
-
-}
 
 .btn-primary{
     margin: 15px;
@@ -49,17 +45,25 @@ td.gamecell{
     margin-left: 10px;
 }
 
+.card_elements{
+    display: unset;
+    height: 3em;
+    width: auto;
+    margin: 15px;
+}
+
 .cardform{
     position: static;
     margin: auto;
-    padding: 15px 15px;
-    width: 25%;
+    padding: 15px;
+/*    width: 25%;
     height: 15%;
     min-width: 15em;
     min-height: 10em;
     max-width: 35em;
-    max-height: 23em;
-
+    max-height: 23em;*/
+    width: 25em;
+    height: 16em;
 }
 
 .comment{
@@ -93,7 +97,9 @@ td.gamecell{
 /*  4th - ids */
 #buybtn{
     float: right;
-    position: relative;
+    /*    position: relative;
+        margin-top: auto;*/
+    margin-bottom: 0;
 }
 
 #card_number-input{
@@ -102,8 +108,16 @@ td.gamecell{
 }
 
 #cardlogo{
+/*     display:block; */
+/*    height: 1em;*/
 /*     position: relative; */
-/*     float: right; */
+    /*float: right;*/
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    text-align: right;
+    height: 2em;
+/*    margin-left: auto;
+    margin-right: 0;*/
 }
 
 #commentInput{
