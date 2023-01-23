@@ -53,6 +53,7 @@ function validation(){
     // It's true if there are anything except digits and space
     if (pattern.test(numberInput)){
         document.getElementById('nonvalid').removeAttribute('hidden');
+        cardlogo.removeChild(cardlogo.lastChild);
     }
 
         // Clear string from spaces
