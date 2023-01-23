@@ -79,9 +79,10 @@ td.gamecell{
     margin: 3px;
 }
 
-.qtyControls{
-    display:inline-block;
-}
+/*.qtyControls{
+/*     display:inline-block; */
+    padding: 0;
+}*/
 
 /*.quantity{
 
@@ -140,7 +141,8 @@ td.gamecell{
 [type="number"]{
     height: 100%;
     width: 15%;
-    padding: 1px 5px;
+    min-width: 3em;
+/*     padding: 1px 5px; */
 }
 
 /* 6th - pseudoclass */
