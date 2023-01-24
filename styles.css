@@ -126,6 +126,10 @@ td.gamecell{
     width: 100%;
 }
 
+#gamecaption{
+    bottom: 5rem;
+}
+
 #nonvalid{
     text-align: center;
     padding: 0.5em;
