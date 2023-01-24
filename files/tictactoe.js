@@ -236,10 +236,10 @@ function game(id){
             // Store all maximums to choose randomly - it weakens AI, but makes game more unpredictable
             // Actually if AI place 1st O in a corner it leads to draw: X could not win. Thats makes game very boring.
                 var max = 0; // Should not set to -1, because there are -1 in matrix
-                var maxcount = 0;
+//                 var maxcount = 0;
                 let k = [];
                 let l = [];
-                let m = 0;
+                let m = -1;
                 for (let i = 0; i < 3; i++){
                     for (let j = 0; j < 3; j++){
                         if (max < matrix[i][j]){
@@ -252,24 +252,24 @@ function game(id){
                             m++;
                             k[m] = i;
                             l[m] = j;
-                            maxcount++;
+//                             maxcount++;
                         }
                     }
                 }
 
                 // Write O to random cell with maximum weight - It's needed on early rounds of game where is uncertanty
-                if (maxcount > 1){
-                    let p = Math.floor(Math.random() * (maxcount));
+                if (m > 0){
+                    let p = Math.floor(Math.random() * (m + 1));
                     document.getElementById((k[p] + 1) + '' + (l[p]+1)).appendChild(o);
                 }
-                else // If only one maximum, thus place O in that cell
+                else if (m == 0)// If only one maximum, thus place O in that cell
                 {
                     document.getElementById((k[0] + 1) + '' + (l[0]+1)).appendChild(o);
                 }
 
                 // Check if O wins
                 var owin = false;
-                // serach rows and rows simultaniously
+                // search rows and rows simulteniously
                 for (let i = 1; i < 4; i++){
                     let ocount = 0;
                     let ocount2 = 0;
@@ -310,7 +310,7 @@ function game(id){
 
                 // When there are no more empty cell inform user
                 if (freespots == 0 && !owin && !xwin){
-                    document.getElementById('msgs').innerHTML = 'GAME OVER! НИЧЬЯ!';
+                    document.getElementById('msgs').innerHTML = "GAME OVER! IT'S A DRAW!";
                 }
             }
         }
@@ -318,7 +318,7 @@ function game(id){
     // If cell occupied then inform user to make other choice
     else {
         cell.style.backgroundColor = 'var(--bs-warning)';
-        document.getElementById('msgs').innerHTML = 'Ячейка занята, выбери другую. Cell is occupied, choose another';
+        document.getElementById('msgs').innerHTML = 'Cell is occupied, choose another';
         setTimeout(function () {cell.style.backgroundColor = ''; document.getElementById('msgs').innerHTML = '' }, 1400);
     }
 }
