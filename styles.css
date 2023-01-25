@@ -21,12 +21,12 @@ q{
 
 
 /*  2nd - tags+classess */
-img.preview {
+/*img.preview {
     max-width: 100%;
     max-height: 100%;
     margin-top: 0.5%;
     margin-left: 0.5%;
-}
+}*/
 
 td.gamecell{
     height: 100px;
@@ -88,9 +88,12 @@ td.gamecell{
 
 }*/
 
-.row{
-    margin-bottom: 0.5rem;
+.preview{
+    max-height: 400px;
+    min-height:329px;
 }
+
+
 
 .signature{
     text-align: right;
@@ -145,6 +148,10 @@ td.gamecell{
     margin-right: 10px;
 }
 
+#thanks{
+
+}
+
 /*  5th - types */
 [type="number"]{
     height: 100%;
@@ -177,5 +184,7 @@ td.gamecell{
 }
 
 
-
-
+/* 7th - Combinator - selectors */
+.accordion-body > .row {
+    margin-bottom: 0.5rem;
+}

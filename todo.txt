@@ -4,6 +4,7 @@ COMMON
 - test on different screen sizes
 - Test with html validator
 - меню закрепить сверху, на всех страницах чтоб не перекрывалось - не надо тратить время!!!
+- вычистить неиспользуемые строчки
 
 INDEX.HTML
 + причесать тэги svg
@@ -22,3 +23,6 @@ Contacts:
 
 Tictactoe:
 + починить сообщение о ничье
+
+STYLE.CSS
+- вычистить пустые
