@@ -28,10 +28,16 @@ q{
     margin-left: 0.5%;
 }*/
 
-td.gamecell{
-    height: 100px;
-    width: 100px;
+table.game {
     vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.gamecell{
+    height: 5rem;
+    width: 3rem;
+    font-size: calc(1.375rem + 1.5vw)
 }
 
 /* 3d - classess */
@@ -78,6 +84,8 @@ td.gamecell{
 .feedback{
     margin: 3px;
 }
+
+
 
 /*.qtyControls{
 /*     display:inline-block; */
@@ -137,6 +145,10 @@ td.gamecell{
     bottom: 5rem;
 }
 
+#msgs{
+
+}
+
 #nonvalid{
     text-align: center;
     padding: 0.5em;
@@ -149,7 +161,7 @@ td.gamecell{
 }
 
 #thanks{
-
+    text-align: center;
 }
 
 /*  5th - types */
@@ -188,3 +200,4 @@ td.gamecell{
 .accordion-body > .row {
     margin-bottom: 0.5rem;
 }
+

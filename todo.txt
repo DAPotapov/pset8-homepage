@@ -1,8 +1,8 @@
 TODO list:
 COMMON
 + copy updated menu to all pages
-- test on different screen sizes
-- Test with html validator
++ test on different screen sizes
++ Test with html validator
 - меню закрепить сверху, на всех страницах чтоб не перекрывалось - не надо тратить время!!!
 - вычистить неиспользуемые строчки
 
