@@ -2,8 +2,6 @@
 $(document).ready(function(){
     $('#orderNow').attr('disabled','');
     $('.quantity').val(0);
-//     console.log('Working');
-
 });
 
 
@@ -121,7 +119,7 @@ function validate(cardnumber){
         sumproduct += digit;
         summa += parseInt(cardnumber[i]);
     }
-        //# Provide output based on math above
+        // Provide output based on math above
     if ((summa + sumproduct) % 10 == 0){
         return true;
     }

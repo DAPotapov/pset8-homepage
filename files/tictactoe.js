@@ -26,10 +26,9 @@ function playgame(){
         tabl.appendChild(row);
     }
     document.getElementById('play').innerHTML = 'PLAY AGAIN!';
-
-    // Game
 }
 
+    // Game
 function game(id){
     document.getElementById('msgs').innerHTML = '';
     var cell = document.getElementById(id);
@@ -236,7 +235,6 @@ function game(id){
             // Store all maximums to choose randomly - it weakens AI, but makes game more unpredictable
             // Actually if AI place 1st O in a corner it leads to draw: X could not win. Thats makes game very boring.
                 var max = 0; // Should not set to -1, because there are -1 in matrix
-//                 var maxcount = 0;
                 let k = [];
                 let l = [];
                 let m = -1;
@@ -252,7 +250,6 @@ function game(id){
                             m++;
                             k[m] = i;
                             l[m] = j;
-//                             maxcount++;
                         }
                     }
                 }

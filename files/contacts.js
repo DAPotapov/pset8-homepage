@@ -1,8 +1,4 @@
 // Functions for About page (contacts.html)
-// $(document).ready(){
-//
-//
-// }
 
 function hasComment(){
     var text = document.getElementById("commentInput").value;

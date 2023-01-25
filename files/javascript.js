@@ -1,14 +1,6 @@
-// Functions for services page (services.html)
-// var element = document.querySelectorAll('.quantity');
-// element.addEventListener('change', inputcontrol());
-//
-// function inputcontrol(){
-//         console.log("It's working");
-// }
 
 function calculateSum(){
 
-//     TODO должна быть проверка/возможность ввода только цифр (regex?)
     var positions = document.querySelectorAll('.quantity');
     var len = positions.length;
     var totalSum = 0;
